@@ -43,8 +43,6 @@
     .hero-text{max-width:600px}
     .hero-text h1{font-size:42px;line-height:1.1;margin:0;font-weight:900}
     @media(min-width:768px){.hero-text h1{font-size:64px}}
-    .logo-side{max-width:300px;height:auto;animation:fadeIn 1.2s ease-in-out;border-radius:12px}
-    @keyframes fadeIn{0%{opacity:0;transform:scale(.96)}100%{opacity:1;transform:scale(1)}}
 
     footer{border-top:1px solid var(--primary);padding:32px 0;background:#000}
   </style>
@@ -55,7 +53,7 @@
       <div class="brand">AutoMotion</div>
       <nav class="nav">
         <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
+        <a href="#why">Why&nbsp;Us</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -63,7 +61,7 @@
         <a href="mailto:AutoMotionMM@gmail.com" title="Email">📧</a>
         <a href="https://www.instagram.com/aut0.motion/" title="Instagram" target="_blank">📸</a>
         <a href="https://www.facebook.com/profile.php?id=61581537103009" title="Facebook" target="_blank">📘</a>
-        <a href="#contact" class="btn">Book Now</a>
+        <a href="#contact" class="btn">Book&nbsp;Now</a>
       </div>
     </div>
   </header>
@@ -74,24 +72,102 @@
         <h1>Mobile Mechanic,<br><span style="color:var(--primary)">On-Site</span> &amp; On-Time</h1>
         <p class="muted">Oil changes, brake jobs, maintenance, and aftermarket installs — done in your driveway. Transparent pricing, fast service, and race-car-level attention to detail.</p>
         <div class="row" style="margin-top:20px;gap:16px">
-          <a href="#contact" class="btn">Get a Quote</a>
-          <a href="#services" class="chip">View Services</a>
+          <a href="#contact" class="btn">Get&nbsp;a&nbsp;Quote</a>
+          <a href="#services" class="chip">View&nbsp;Services</a>
         </div>
       </div>
-
-      <!-- Your actual embedded logo -->
-      <img 
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAA..." 
-        alt="AutoMotion Logo" 
-        class="logo-side" />
     </div>
   </section>
 
-  <!-- ... rest of your site content (services, contact, footer, etc.) ... -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="title" style="font-size:32px;color:var(--primary)">Popular Services</h2>
+      <div class="grid grid-3 mt-6">
+        <div class="card">
+          <h3 class="title">Oil&nbsp;&amp;&nbsp;Filter</h3>
+          <p class="muted">Full-synthetic oil change, OEM-spec filters, disposal included.</p>
+        </div>
+        <div class="card">
+          <h3 class="title">Brakes</h3>
+          <p class="muted">Pads &amp; rotors, fluid flush, caliper service — the works.</p>
+        </div>
+        <div class="card">
+          <h3 class="title">Aftermarket Installs</h3>
+          <p class="muted">Intakes, exhausts, suspension, lighting, accessories.</p>
+        </div>
+        <div class="card">
+          <h3 class="title">General Maintenance</h3>
+          <p class="muted">Transmission &amp; differential fluid flushes, air filter replacements, and other essential upkeep to keep your vehicle running smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="section">
+    <div class="container grid grid-2">
+      <div>
+        <h2 class="title">Built by an engineering-minded mechanic</h2>
+        <p class="muted">Precision from the track to your daily driver. We use torque specs, checklists, and photo documentation for every job.</p>
+      </div>
+      <div class="card">
+        <h3 class="title">Service Areas</h3>
+        <p class="muted">New&nbsp;Jersey • Greater&nbsp;Philadelphia • New&nbsp;York&nbsp;City&nbsp;(ask!)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section">
+    <div class="container">
+      <h2 class="title">Drivers love AutoMotion</h2>
+      <div class="grid grid-3 mt-6">
+        <figure class="card">
+          <blockquote>Showed up on time, explained everything, super clean install.</blockquote>
+          <div class="stars">★★★★★</div>
+          <figcaption class="muted">– Alyssa&nbsp;R.</figcaption>
+        </figure>
+        <figure class="card">
+          <blockquote>Brake job was quicker than a shop and cost less.</blockquote>
+          <div class="stars">★★★★★</div>
+          <figcaption class="muted">– Marcus&nbsp;V.</figcaption>
+        </figure>
+        <figure class="card">
+          <blockquote>Caught a worn belt before it stranded me — lifesaver!</blockquote>
+          <div class="stars">★★★★★</div>
+          <figcaption class="muted">– Jason&nbsp;P.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="card" style="padding:28px">
+        <h2 class="title">Get&nbsp;a&nbsp;free&nbsp;quote</h2>
+        <p class="muted">Tell us your car, service needed, and preferred time. We’ll reply by email.</p>
+        <p><strong>Phone:</strong> <a href="tel:6095589412" style="color:var(--primary)">609-558-9412</a><br>
+        <strong>Email:</strong> <a href="mailto:AutoMotionMM@gmail.com" style="color:var(--primary)">AutoMotionMM@gmail.com</a></p>
+        <form action="https://formsubmit.co/AutoMotionMM@gmail.com" method="POST" class="grid-form mt-4">
+          <input type="hidden" name="_subject" value="New Quote Request — AutoMotion" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input class="input" name="name" required placeholder="Name" />
+          <input class="input" name="email" required type="email" placeholder="Email" />
+          <input class="input" name="vehicle" required placeholder="Vehicle (Year • Make • Model)" style="grid-column:1/-1" />
+          <textarea class="textarea" name="service" placeholder="Service needed (oil, brakes, install, etc.)" style="grid-column:1/-1"></textarea>
+          <button class="btn" type="submit" style="grid-column:1/-1">Submit&nbsp;Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
   <footer>
     <div class="container row" style="justify-content:space-between">
       <div>© <span id="year"></span> AutoMotion. All rights reserved.</div>
+      <div class="row" style="gap:24px">
+        <a href="mailto:AutoMotionMM@gmail.com" title="Email">📧</a>
+        <a href="https://www.instagram.com/aut0.motion/" title="Instagram" target="_blank">📸</a>
+        <a href="https://www.facebook.com/profile.php?id=61581537103009" title="Facebook" target="_blank">📘</a>
+      </div>
     </div>
   </footer>
   <script>
@@ -99,5 +175,4 @@
   </script>
 </body>
 </html>
-
 
